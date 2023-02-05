@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final project</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 7.4;
+        }
+        /* logo design */
+        
+        #logo {
+            margin: 17px 25px;
+        }
+        
+        #logo img {
+            margin: 18px 25px;
+            height: 27px;
+        }
+        /* is sy items line mn ai jaiy gy */
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            border-radius: 20px;
+            text-decoration: none;
+            padding: 5px 17px;
+        }
+        
+        #navbar ul li a:hover {
+            color: white;
+            background: rgb(19, 18, 18);
+        }
+        /* home */
+        
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            padding: 20px 20px;
+            margin: 33px 64px;
+        }
+        
+        #home::before {
+            content: "";
+            position: absolute;
+            background: url('images/pexels-photo-2611810.jpeg') no-repeat center center/cover;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 75%;
+            z-index: -1;
+            opacity: 0.95;
+        }
+        
+        #home .h-primary {
+            color: white;
+            align-self: center;
+            font-size: 40px;
+        }
+        
+        #home p {
+            font-size: 20px;
+            padding: 0px 9px;
+            margin: 5px 5px;
+            text-align: center;
+        }
+        
+        #home .btn {
+            line-height: 2.3em;
+            margin: 15px auto;
+            padding: 2px 8px;
+            width: 9%;
+            cursor: pointer;
+        }
+        
+        #home .btn:hover {
+            border-radius: 18px;
+            background-color: black;
+            color: white;
+        }
+        /* services */
+        
+        #services {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .h-secondary {
+            text-align: center;
+            font-size: 40px;
+            margin: 10px 10px;
+            padding: 150px 10px;
+        }
+        
+        #services .box {
+            width: 400px;
+            height: 350px;
+            border: 2px solid red;
+            background-color: blanchedalmond;
+            margin: -70px 30px;
+            padding: 10px 50px;
+            border-radius: 20px;
+        }
+        
+        #services .box img {
+            height: 120px;
+            width: 130px;
+            display: block;
+            margin: 14px auto;
+        }
+        
+        #services .food {
+            text-align: center;
+            font-size: 27px;
+        }
+        
+        #services p {
+            padding: 4px 3px;
+            margin: 5px 8px;
+        }
+        /* clients */
+        
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .h-secondar {
+            text-align: center;
+            font-size: 40px;
+            margin: 100px 17px;
+            padding: 16px 19px
+        }
+        
+        #clients-section::before {
+            content: "";
+            position: absolute;
+            background: url('images/pexels-photo-4551832.jpeg');
+            width: 100%;
+            height: 65%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        
+        #clients img {
+            height: 120px;
+        }
+        
+        .clients-items {
+            margin: 10px 30px;
+            padding: 10px 10px;
+        }
+        /* contact */
+        
+        #contact-container {
+            position: relative;
+        }
+        
+        #contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #contact-container::before {
+            content: "";
+            position: absolute;
+            background: url('images/pexels-photo-1300975.jpeg') no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        
+        #contact input,
+        #contact textarea {
+            width: 100%;
+            padding: 5px;
+        }
+        
+        .h-se {
+            text-align: center;
+            font-size: 40px;
+            margin: 10px 10px;
+            padding: 10px 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/download.png" alt="error">
+        </div>
+        <ul>
+            <li class="items"><a href="">Home</a></li>
+            <li class="items"><a href="">Services</a></li>
+            <li class="items"><a href="">About</a></li>
+            <li class="items"><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary"> Welcome to my website </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In commodi assumenda quisquam perspiciatis, nisi voluptatum </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, dolorem </p>
+        <button class="btn"> Order Now</button>
+
+    </section>
+    <!-- services -->
+    <section class="services-container">
+        <h1 class="h-secondary">Our Services</h1>
+        <div id="services">
+            <box class="box" id="box1">
+                <img src="images/pexels-photo-1120575.jpeg" alt="error">
+                <h3 class="food">Food Ordering</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius vero fugit veritatis unde laudantium ducimus aspernatur sit odit nesciunt, recusandae corporis dolore dignissimos ratione at eligendi repudiandae ipsa quaerat facilis. Excepturi
+                    dolorem praesentium laudantium.</p>
+            </box>
+            <box class="box" id="box2">
+                <img src="images/pexels-photo-1300975.jpeg" alt="error">
+                <h3 class="food">Catering</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam at architecto rem hic quis harum eaque praesentium sed quaerat quia tenetur, aut asperiores nostrum, voluptatibus enim voluptatum soluta. Minima excepturi quasi consectetur
+                    minus illum.</p>
+            </box>
+            <box class="box" id="box3">
+                <img src="images/pexels-photo-1120575.jpeg" alt="error">
+                <h3 class="food">Bulk Ordering</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, adipisci aliquam. Quo sed molestias ratione veritatis, perspiciatis, voluptas dolor quae eaque perferendis libero facilis illo laudantium similique numquam tenetur in consequatur
+                    sint quaerat? Nisi!</p>
+            </box>
+
+        </div>
+    </section>
+    <!-- clients -->
+    <section id="clients-section">
+        <h1 class="h-secondar">Our Clients </h1>
+        <div id="clients">
+            <div class="clients-items">
+                <img src="images/hp.jpg" alt="error">
+            </div>
+            <div class="clients-items">
+                <img src="images/microsoft.webp" alt="error">
+            </div>
+            <div class="clients-items">
+                <img src="images/apple.webp" alt="error">
+            </div>
+            <div class="clients-items">
+                <img src="images/microsoft.webp" alt="error">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-container">
+        <h1 class="h-se ">Contact Us</h1>
+        <div id="contact">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number:</label>
+                    <input type="phone" name="phonenumber" id="phonenumber" placeholder="Enter your phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <textarea name="mesaage" id="message" cols="30" rows="10">Write message</textarea>
+
+                </div>
+
+
+
+
+
+            </form>
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

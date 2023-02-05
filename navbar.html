@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final project</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            /* top: 0;
+            left: 0; */
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        /* logo design */
+        
+        #logo {
+            margin: 17px 25px;
+        }
+        
+        #logo img {
+            margin: 18px 25px;
+            height: 27px;
+        }
+        /* is sy items line mn ai jaiy gy */
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            /* justify-content: center; */
+        }
+        
+        #navbar ul li a {
+            color: black;
+            display: block;
+            border-radius: 20px;
+            text-decoration: none;
+            padding: 0px 17px;
+        }
+        
+        #navbar ul li a:hover {
+            color: white;
+            background: rgb(19, 18, 18);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="images/download.png" alt="error">
+        </div>
+        <ul>
+            <li class="items"><a href="">Home</a></li>
+            <li class="items"><a href="">Services</a></li>
+            <li class="items"><a href="">About</a></li>
+            <li class="items"><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+</body>
+
+</html>
